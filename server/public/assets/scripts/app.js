@@ -17,6 +17,10 @@ myApp.config(["$routeProvider", function($routeProvider){
       templateUrl: "/assets/views/routes/dummy.html",
       controller: "AddController"
     }).
+    when("/signin", {
+      templateUrl: "/assets/views/routes/signin.html",
+      controller: "AddController"
+    }).
     otherwise({
       redirectTo: "/index"
     });

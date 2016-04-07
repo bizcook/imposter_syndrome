@@ -8,6 +8,7 @@ var UserSchema = new Schema({
     password: {type: String, required: true},
     firstname: {type: String, required: true},
     lastname: {type: String, required: true},
+    email: {type: String, required: true},
     lastlogin: {type: Date, default: Date.now }
 });
 

@@ -12,6 +12,7 @@ router.get("/name", function(req,res,next){
         username: req.user.username,
         firstname: req.user.firstname,
         lastname: req.user.lastname,
+        email: req.user.email,
         datecreated: req.user.lastlogin
     };
     res.json(resUser);
