@@ -1,0 +1,32 @@
+{
+  "name": "imposter_solo_project",
+  "version": "1.0.0",
+  "description": "For this project (an imposter syndrome application), Biz will be providing unique users a place to go to vent their frustrations (and laugh), while also gaining perspective on how for they’ve come from a development standpoint. It will act as a sort of positive feedback loop for users to reflect on their learnings and to let go of what their current problem is.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bizcook/imposter_solo_project.git"
+  },
+  "author": "biz cook",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bizcook/imposter_solo_project/issues"
+  },
+  "homepage": "https://github.com/bizcook/imposter_solo_project#readme",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-route": "^1.5.3",
+    "bcrypt": "^0.8.5",
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "mongoose": "^4.4.11",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  }
+}

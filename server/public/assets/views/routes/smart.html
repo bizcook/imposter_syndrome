@@ -1,0 +1,11 @@
+<div class = "maincontainer">
+  <div ng-repeat="Hero in data.response"> </div>
+  <form ng-submit = "addSmart(smarts)">
+    <input ng-model="smarts.positive" type = "text" placeholder="what are you proud of" />
+
+    <input type = "submit" value = "save" />
+  </form>
+  <div ng-repeat="smart in data.response">
+      <h3>{{smart.positive}}</h3>
+    </div>
+</div>
