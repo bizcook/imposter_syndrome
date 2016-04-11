@@ -1,6 +1,6 @@
 var myApp = angular.module("myApp", ["ngRoute"]);
 
-//break the register thing into partials? and then set home page?
+
 //change controller names once making new ones
 
 myApp.config(["$routeProvider", function($routeProvider){

@@ -4,16 +4,12 @@ var passport = require("passport");
 var path = require("path");
 //add if adding more things
 var Smart = require("../models/smart");
+var bodyParser = require("body-parser");
+var mongoose = require("mongoose");
+var Schema = mongoose.Schema;
 
 //
-router.get("/smart",function(req, res){
-  Smart.find({}, function(err, data){
-    if(err){
-      console.log("ERROR in INDEXJS to GET smart", err);
-    }
-    res.send(data);
-  });
-});
+
 
 router.post("/smart", function(req, res){
   console.log("HERE IS THE REQ BODY", req.body);
@@ -23,6 +19,7 @@ router.post("/smart", function(req, res){
     if(err){
       console.log("error saving smart:", err);
     }
+      console.log("ADDING SMART / SAVE ", req.body.positive); //this is being hit on submit
     res.send(data);
   });
 });
