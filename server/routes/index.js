@@ -18,7 +18,7 @@ router.get("/smart",function(req, res){
 router.post("/smart", function(req, res){
   console.log("HERE IS THE REQ BODY", req.body);
 
-  var addedSmart = new Smarts({"positive" : req.body.positive});
+  var addedSmart = new Smart({"positive" : req.body.positive});
   addedSmart.save(function(err, data){
     if(err){
       console.log("error saving smart:", err);
