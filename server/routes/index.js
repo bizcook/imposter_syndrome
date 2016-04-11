@@ -28,7 +28,7 @@ router.post("/smart", function(req, res){
 });
 
 router.post("/", passport.authenticate("local", {
-    successRedirect: "/assets/views/routes/users.html",
+    successRedirect: "/assets/views/users.html",
     failureRedirect: "/"
 }));
 
