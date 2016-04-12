@@ -25,8 +25,7 @@ myApp.controller("ShowController", ["$scope", "SmartService", function($scope, S
 
 //for dummy route
 myApp.controller("QuoteController", ["$scope", "$http", "SmartService", function($scope, $http, SmartService){
-
+console.log('quote controller is loaded');
 SmartService.getQuote();
-
 
   }]);

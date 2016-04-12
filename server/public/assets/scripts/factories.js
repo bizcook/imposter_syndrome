@@ -18,7 +18,9 @@ myApp.factory("SmartService", ["$http", function($http){
   };
 
   var getQuote = function(){
+    console.log('getQuote is firing');
     $http.get("/quote").then(function(response){
+      console.log("GET REQ FOR QUOTE FIRED");
       console.log(response.data.quote); //array
       $scope.quotations = response.data.quote;
 

@@ -14,11 +14,12 @@ var User = require("./models/user");
 var Smart = require("./models/smart");
 
 //ROUTES update if adding more
-var index = require("./routes/index");
+var quote = require("./routes/quote");
 var register = require("./routes/register");
 var user = require("./routes/user");
 var smart = require("./routes/smart");
 var dummy = require("./routes/dummy");
+var index = require("./routes/index");
 
 app.use(session({
   secret: "secret",
@@ -81,6 +82,7 @@ passport.use("local", new localStrategy({
 ));
 
 // use these routes...update if you add more
+app.use("/quote", quote);
 app.use("/register", register);
 app.use("/user", user);
 app.use("/smart", smart);
