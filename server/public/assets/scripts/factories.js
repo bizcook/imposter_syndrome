@@ -1,5 +1,6 @@
 myApp.factory("SmartService", ["$http", function($http){
   var data = {};
+  var quotations = "";
 
   var postSmart = function(data){
     console.log("here is data inside post smart funct in fact: ", data);
@@ -21,8 +22,16 @@ myApp.factory("SmartService", ["$http", function($http){
     console.log('getQuote is firing');
     $http.get("/quote").then(function(response){
       console.log("GET REQ FOR QUOTE FIRED");
-      console.log(response.data.quote); //array
-      $scope.quotations = response.data.quote;
+      quotations = response.data;
+      console.log("response.data: ", response.data);
+      var rando = ( Math.random( 0, 3 ) * 100 ) % response.data.quotes.length;
+      var randoInty = parseInt( rando );
+      console.log("max: ", response.data.quotes.length);
+      console.log("random man: ", rando);
+      console.log("randoInty yo: ", randoInty);
+      console.log("response.data.quotes[rando]: ", response.data.quotes[randoInty]);
+      console.log("quotations: ", quotations);
+
 
     });
   };
@@ -32,6 +41,7 @@ myApp.factory("SmartService", ["$http", function($http){
     postSmart : postSmart,
     getSmart : getSmart,
     getQuote : getQuote,
+    quotations : quotations,
     data : data
   };
 }]);
