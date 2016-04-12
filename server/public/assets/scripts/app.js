@@ -15,7 +15,7 @@ myApp.config(["$routeProvider", function($routeProvider){
     }).
     when("/dummy", {
       templateUrl: "/assets/views/routes/dummy.html",
-      controller: "AddController"
+      controller: "QuoteController"
     }).
     when("/home", {
       templateUrl: "/assets/views/routes/home.html",

@@ -17,10 +17,19 @@ myApp.factory("SmartService", ["$http", function($http){
     });
   };
 
+  var getQuote = function(){
+    $http.get("/quote").then(function(response){
+      console.log(response.data.quote); //array
+      $scope.quotations = response.data.quote;
+
+    });
+  };
+
   //below is public
   return {
     postSmart : postSmart,
     getSmart : getSmart,
+    getQuote : getQuote,
     data : data
   };
 }]);
