@@ -3,6 +3,7 @@ myApp.controller("AddController", ["$scope", "$http", "SmartService", function($
   $scope.data = [];
 
 
+
           //this used to be addsmarts
   $scope.addSmart = function(postObject){
     console.log("in addcontrollers ADD SMART:", postObject);

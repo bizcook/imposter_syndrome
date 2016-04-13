@@ -6,11 +6,13 @@
 
     <input type = "submit" ng-click="showme=true" value = "i'm smart!" />
   </form>
-  <h2>Would ya look at that. how impressive.</h2>
+
   <div ng-controller="ShowController">
+    <h2>THINGS I'VE LEARNED</h2>
   <div ng-repeat="smarts in positive.response" class = "animation" >
     <p ng-hide="showme"></p>
-    <h2 ng-show="showme">{{ smarts.positive }}</h2>
+
+    <h3 ng-show="showme">{{ smarts.positive }}</h3>
 
   </div>
   </div>
