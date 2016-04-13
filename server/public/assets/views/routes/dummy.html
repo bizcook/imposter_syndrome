@@ -1,25 +1,12 @@
-  <div class = "maincontainer">
-    <h1>Tell me why you're a dummy.</h1>
-    <!--  ng-submit = "addSmart(smarts)" took this out of the form tag -->
-    <form>
-      <input ng-model="nothing" type = "text" placeholder="why ya dumb" />
-      <button ng-click="showme=true">i'm dumb</button>
-      <!-- <button ng-click="showme=false">Hide</button> -->
-      <!-- this used to be <input type = "submit" value = "i'm dumb" -->
-      <!-- <button ng-click="showQuote()" value = "i'm dumb" /> -->
-    </form>
-  </div>
-
-    <!-- could use this instead of appending DOM from array shuffler? -->
-    <p ng-hide="showme"></p>
-    <h2 ng-show="showme">OH GO TAKE A WALK. WHO CARES</h2>
-
-  <div ng-controller="QuoteController">
-      <!-- <div ng-repeat = "quotes in quote.response"> -->
-    <h1>{{ response.quote }}</h1>
-
-
-
-        <p> {{dumber.data.quotes[rando(0,2)].quote}}</p>
-
-    </div>
+<div class = "maincontainer">
+  <h1>Tell me why you're a dummy.</h1>
+  <form>
+    <input ng-model="nothing" type = "text" placeholder="why ya dumb" />
+    <button ng-click="showme=true">i'm dumb</button>
+  </form>
+</div>
+<div ng-controller="QuoteController">
+  <p ng-hide="showme"></p>
+  <h2 ng-show="showme">{{dumber.data.quotes[rando(0,2)].quote}}</h2>
+</div>
+</div>
