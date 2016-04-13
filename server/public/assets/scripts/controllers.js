@@ -1,6 +1,8 @@
 myApp.controller("AddController", ["$scope", "$http", "SmartService", function($scope, $http, SmartService){
   $scope.smarts = {};
   $scope.data = [];
+
+
           //this used to be addsmarts
   $scope.addSmart = function(postObject){
     console.log("in addcontrollers ADD SMART:", postObject);
@@ -25,7 +27,14 @@ myApp.controller("ShowController", ["$scope", "SmartService", function($scope, S
 
 //for dummy route
 myApp.controller("QuoteController", ["$scope", "$http", "SmartService", function($scope, $http, SmartService){
+$scope.dumber = [];
+$scope.rando = function(min,max){
+  return Math.floor(Math.random() * (1 + max - min) + min);
+};
+
 console.log('quote controller is loaded');
 SmartService.getQuote();
-
+$scope.quote = SmartService.quotations;
+$scope.dumber = SmartService.dumber;
+console.log("$scope.quote", SmartService.quotations);
   }]);

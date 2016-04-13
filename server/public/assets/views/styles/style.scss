@@ -1,7 +1,40 @@
 @import "bourbon/bourbon";
-h1 {
+@import "neat/neat";
+
+body{
+  background-color: rgb(0, 0, 51);
+}
+h1, h3, body, h4, h2, a {
   font-family: 'Oswald', sans-serif;
-  color: tomato;
+  color: rgb(102,255,178);
   text-transform: uppercase;
-  letter-spacing: 5px;
+}
+h1{
+  font-size: 90px;
+  letter-spacing: 10px;
+  width:80%;
+  display: block;
+  margin: 0 auto;
+}
+
+h3{
+  color: #ff6566;
+}
+.animation {
+  -webkit-transition: 1s;
+}
+  .animation.ng-enter {
+  opacity: 0;
+}
+
+.animation.ng-leave {
+  opacity: 1;
+}
+
+.animation.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+.animation.ng-leave.ng-leave-active {
+  opacity: 0;
 }

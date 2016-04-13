@@ -1,13 +1,14 @@
 <div class = "maincontainer">
   <h1>tell me why you're a freakin genius.</h1>
-  <div ng-repeat="Smart in data.response"> <h3> {{ smarts.positive }} </h3></div>
+  <!-- <div ng-repeat="Smart in data.response"> <h3> {{ smarts.positive }} </h3></div> -->
   <form ng-submit = "addSmart(smarts)">
     <input ng-model="smarts.positive" type = "text" placeholder="what are you proud of" />
 
     <input type = "submit" value = "i'm smart!" />
   </form>
+  <h2>Would ya look at that. how impressive.</h2>
   <div ng-controller="ShowController">
-  <div ng-repeat="smarts in positive.response" >
+  <div ng-repeat="smarts in positive.response" class = "animation" >
     <h3> {{ smarts.positive }} </h3>
   </div>
   </div>

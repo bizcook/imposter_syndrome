@@ -1,6 +1,7 @@
 myApp.factory("SmartService", ["$http", function($http){
   var data = {};
-  var quotations = "";
+  var quotations = {};
+  var dumber = {};
 
   var postSmart = function(data){
     console.log("here is data inside post smart funct in fact: ", data);
@@ -19,19 +20,23 @@ myApp.factory("SmartService", ["$http", function($http){
   };
 
   var getQuote = function(){
-    console.log('getQuote is firing');
-    $http.get("/quote").then(function(response){
-      console.log("GET REQ FOR QUOTE FIRED");
-      quotations = response.data;
-      console.log("response.data: ", response.data);
-      var rando = ( Math.random( 0, 3 ) * 100 ) % response.data.quotes.length;
-      var randoInty = parseInt( rando );
-      console.log("max: ", response.data.quotes.length);
-      console.log("random man: ", rando);
-      console.log("randoInty yo: ", randoInty);
-      console.log("response.data.quotes[rando]: ", response.data.quotes[randoInty]);
-      console.log("quotations: ", quotations);
 
+              //go to routes under quote.js and send back the json file.
+    $http.get("/quote").then(function(response){
+
+      //the JSON object from the quote route which pulled from the json
+      quotations.data = response.data;
+      dumber.data = response.data;
+      console.log('hello why am i dumb in factory',dumber.data);
+      // console.log("response.data: ", response.data);
+      // var rando = ( Math.random( 0, 3 ) * 100 ) % response.data.quotes.length;
+      // var randoInty = parseInt( rando );
+      // console.log("in factory max: ", response.data.quotes.length);
+      // console.log("in factory random man: ", rando);
+      // console.log("in factory randoInty yo: ", randoInty);
+      // console.log("in factory response.data.quotes[rando]: ", response.data.quotes[randoInty]);
+      // console.log("in factory quotations: ", quotations);
+      // dumb = response.data.quotes[randoInty];
 
     });
   };
@@ -42,6 +47,7 @@ myApp.factory("SmartService", ["$http", function($http){
     getSmart : getSmart,
     getQuote : getQuote,
     quotations : quotations,
+    dumber : dumber,
     data : data
   };
 }]);
