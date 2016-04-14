@@ -51,8 +51,8 @@ h3{
   $centered-navigation-logo-height: 2em;
   $centered-navigation-background: #E7F1EC;
   $centered-navigation-color: transparentize($base-font-color, 0.3);
-  $centered-navigation-color-hover: $secondaryColor;
-  $centered-navigation-height: 100px;
+  $centered-navigation-color-hover: $base-font-color;
+  $centered-navigation-height: 60px;
   $centered-navigation-item-padding: 1em;
   $centered-navigation-submenu-padding: 1em;
   $centered-navigation-submenu-width: 12em;
@@ -65,8 +65,7 @@ h3{
   width: 100%;
   z-index: 9999;
 
-
-// Mobile view
+  // Mobile view
 
   .mobile-logo {
     display: inline;
@@ -105,8 +104,7 @@ h3{
     }
   }
 
-
-// Nav menu
+  // Nav menu
 
   .centered-navigation-wrapper {
     @include outer-container;
@@ -121,8 +119,7 @@ h3{
     margin: 0 auto;
     overflow: visible;
     padding: 0;
-    -webkit-transform-style: preserve-3d;
-// stop webkit flicker
+    -webkit-transform-style: preserve-3d; // stop webkit flicker
     width: 100%;
     z-index: 99999;
 
@@ -136,8 +133,7 @@ h3{
     }
   }
 
-
-// The nav items
+  // The nav items
 
   .nav-link:first-child {
     @include media($horizontal-bar-mode) {
@@ -193,8 +189,7 @@ h3{
     opacity: 0.6;
   }
 
-
-// Sub menus
+  // Sub menus
 
   li.more.nav-link {
     padding-right: 0;

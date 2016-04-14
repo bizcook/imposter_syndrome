@@ -35,16 +35,16 @@ h3 {
 .centered-navigation {
   background-color: #E7F1EC;
   border-bottom: 1px solid #d4e6dd;
-  min-height: 100px;
+  min-height: 60px;
   width: 100%;
   z-index: 9999; }
   .centered-navigation .mobile-logo {
     display: inline;
     float: left;
-    max-height: 100px;
+    max-height: 60px;
     padding-left: 1em; }
     .centered-navigation .mobile-logo img {
-      max-height: 100px;
+      max-height: 60px;
       opacity: 0.6;
       padding: 0.8em 0; }
     @media screen and (min-width: 53.75em) {
@@ -54,7 +54,7 @@ h3 {
     color: rgba(51, 51, 51, 0.7);
     display: block;
     float: right;
-    line-height: 100px;
+    line-height: 60px;
     margin: 0;
     padding-right: 1em;
     text-decoration: none;
@@ -63,7 +63,7 @@ h3 {
       .centered-navigation .centered-navigation-mobile-menu {
         display: none; } }
     .centered-navigation .centered-navigation-mobile-menu:focus, .centered-navigation .centered-navigation-mobile-menu:hover {
-      color: #ff6667; }
+      color: #333; }
   .centered-navigation .centered-navigation-wrapper {
     max-width: 1200px;
     margin-left: auto;
@@ -99,7 +99,7 @@ h3 {
   .centered-navigation ul li.nav-link {
     background: #E7F1EC;
     display: block;
-    line-height: 100px;
+    line-height: 60px;
     overflow: hidden;
     padding-right: 1em;
     text-align: right;
@@ -111,12 +111,12 @@ h3 {
       outline: none;
       text-decoration: none; }
       .centered-navigation ul li.nav-link a:focus, .centered-navigation ul li.nav-link a:hover {
-        color: #ff6667; }
+        color: #333; }
     @media screen and (min-width: 53.75em) {
       .centered-navigation ul li.nav-link {
         background: transparent;
         display: inline;
-        line-height: 100px; }
+        line-height: 60px; }
         .centered-navigation ul li.nav-link a {
           padding-right: 1em; } }
   .centered-navigation li.logo.nav-link {
@@ -191,7 +191,7 @@ h3 {
       padding-right: 0; }
       @media screen and (min-width: 53.75em) {
         .centered-navigation ul.submenu li {
-          line-height: 76.92308px; }
+          line-height: 46.15385px; }
           .centered-navigation ul.submenu li:first-child > a {
             border-top-left-radius: 3px;
             border-top-right-radius: 3px; }
