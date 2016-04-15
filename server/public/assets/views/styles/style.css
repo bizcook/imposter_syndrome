@@ -43,6 +43,20 @@ h1 {
       h1:last-child {
         margin-right: 0; } }
 
+.registerBtn {
+  padding-top: 5px;
+  text-align: center;
+  text-decoration: none; }
+
+.signIn {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%; }
+  .signIn:last-child {
+    margin-right: 0; }
+
 h3 {
   float: left;
   display: block;
@@ -70,6 +84,9 @@ h2 {
   letter-spacing: 2px; }
   h2:last-child {
     margin-right: 0; }
+
+.userLabel {
+  margin-bottom: 0; }
 
 h4 {
   float: left;
@@ -140,7 +157,7 @@ input {
 placeholder {
   text-align: center; }
 
-.submit {
+.submit, .loginButton, .registerBtn {
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -153,22 +170,26 @@ placeholder {
   background-color: #ff6667;
   color: white;
   font-family: "Oswald", sans-serif;
+  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: block; }
-  .submit:last-child {
+  .submit:last-child, .loginButton:last-child, .registerBtn:last-child {
     margin-right: 0; }
   @media screen and (max-width: 500px) {
-    .submit {
+    .submit, .loginButton, .registerBtn {
       float: left;
       display: block;
       margin-right: 7.42297%;
       width: 100%;
       margin-left: 0%; }
-      .submit:last-child {
+      .submit:last-child, .loginButton:last-child, .registerBtn:last-child {
         margin-right: 0; } }
 
-.submit:hover {
+label {
+  color: red; }
+
+.submit:hover, .loginButton:hover, .registerBtn:hover {
   background-color: #66ffb2;
   color: black; }
 
