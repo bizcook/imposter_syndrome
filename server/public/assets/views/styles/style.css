@@ -82,6 +82,16 @@ h4 {
   font-size: 2em; }
   h4:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 500px) {
+    h4 {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%;
+      margin-left: 0%;
+      font-size: 1.5em; }
+      h4:last-child {
+        margin-right: 0; } }
 
 .frontImg {
   display: block;
@@ -89,10 +99,19 @@ h4 {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 65.88078%;
-  margin-left: 17.05961%; }
+  width: 40.29137%;
+  margin-left: 4.2649%; }
   .frontImg:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 500px) {
+    .frontImg {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%;
+      margin-left: 0%; }
+      .frontImg:last-child {
+        margin-right: 0; } }
 
 .graph {
   padding-top: 30px; }
