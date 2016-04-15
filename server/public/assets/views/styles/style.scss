@@ -57,7 +57,7 @@ h4{
   letter-spacing: 3px;
   color:white;
   font-size: 2em;
-  
+
 }
 
 
@@ -76,12 +76,14 @@ h4{
 
 input{
   @include span-columns(4);
+  @include shift(4);
   border: none;
   height: 30px;
 }
 
 .submit{
     @include span-columns(2);
+    @include shift(5);
     border: none;
     height: 30px;
     background-color: $secondaryColor;
@@ -101,7 +103,7 @@ input{
   $base-font-color: black !default;
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
-  $centered-navigation-background: #E7F1EC;
+  $centered-navigation-background: transparentize(white, 0.1);
   $centered-navigation-color: transparentize(black, 0.1);
   $centered-navigation-color-hover: $secondaryColor;
   $centered-navigation-height: 80px;
