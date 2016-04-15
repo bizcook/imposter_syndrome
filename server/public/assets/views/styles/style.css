@@ -53,6 +53,7 @@ h1 {
     margin-right: 0; }
 
 h3 {
+  font-size: 4em;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -61,11 +62,19 @@ h3 {
   letter-spacing: 2px;
   display: block;
   color: #ff6667;
-  font-size: 4em;
-  text-align: center;
-  float: none; }
+  text-align: center; }
   h3:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 500px) {
+    h3 {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%;
+      margin-left: 0%;
+      font-size: 2.5em; }
+      h3:last-child {
+        margin-right: 0; } }
 
 .smarts {
   font-size: 3em; }
