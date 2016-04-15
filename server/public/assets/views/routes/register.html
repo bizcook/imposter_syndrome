@@ -6,22 +6,25 @@
     <link rel="stylesheet" href = "/assets/views/styles/style.css" />
   </head>
   <body>
-      <p>
-        Register!
-      </p>
+    <h1 class="signIn">please sign up!</h1>
 
       <form action="/register" method="post">
-          <label for="username">USERNAME: </label>
+          <h4 class="userLabel">username:</h4>
+          <label for="username"></label>
           <input type="text" name="username" id="username" />
-          <label for="password">PASSWORD: </label>
+          <h4 class="userLabel">PASSWORD:</h4>
+          <label for="password"></label>
           <input type="text" name="password" id="password" />
-          <label for="firstname">FIRST NAME: </label>
+          <h4 class="userLabel">First Name:</h4>
+          <label for="firstname"></label>
           <input type="text" name="firstname" id="firstname" />
-          <label for="lastname">LAST NAME: </label>
+          <h4 class="userLabel">Last Name:</h4>
+          <label for="lastname"></label>
           <input type="text" name="lastname" id="lastname" />
-          <label for="email">EMAIL: </label>
+          <h4 class="userLabel">email:</h4>
+          <label for="email"></label>
           <input type="text" name="email" id="email" />
-          <input type="submit" value="Register" />
+          <input class="loginButton" type="submit" value="Register" />
       </form>
   </body>
 </html>

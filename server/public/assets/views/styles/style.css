@@ -43,11 +43,6 @@ h1 {
       h1:last-child {
         margin-right: 0; } }
 
-.registerBtn {
-  padding-top: 5px;
-  text-align: center;
-  text-decoration: none; }
-
 .signIn {
   float: left;
   display: block;
@@ -186,10 +181,30 @@ placeholder {
       .submit:last-child, .loginButton:last-child, .registerBtn:last-child {
         margin-right: 0; } }
 
+.registerBtn {
+  padding-top: 5px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #66ffb2;
+  color: black;
+  margin-top: 0; }
+  .registerBtn:hover {
+    background-color: white; }
+
+@media screen and (max-width: 500px) {
+  .loginButton, .registerBtn {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 46.28851%;
+    margin-left: 26.85574%; }
+    .loginButton:last-child, .registerBtn:last-child {
+      margin-right: 0; } }
+
 label {
   color: red; }
 
-.submit:hover, .loginButton:hover, .registerBtn:hover {
+.submit:hover, .loginButton:hover {
   background-color: #66ffb2;
   color: black; }
 
