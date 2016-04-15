@@ -19,13 +19,29 @@ h1, h3, body, h4, h2, a {
   text-align: center; }
 
 h1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
   font-size: 90px;
   letter-spacing: 10px;
-  width: 80%;
   display: block;
-  margin: 0 auto;
   padding-top: 5%;
   text-align: center; }
+  h1:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 500px) {
+    h1 {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%;
+      font-size: 60px;
+      margin-left: 0%;
+      letter-spacing: 5px; }
+      h1:last-child {
+        margin-right: 0; } }
 
 h3 {
   float: left;
@@ -146,6 +162,15 @@ placeholder {
   display: inline; }
   .brainGif:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 500px) {
+    .brainGif {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%;
+      margin-left: 0%; }
+      .brainGif:last-child {
+        margin-right: 0; } }
 
 input::-webkit-input-placeholder {
   color: rgba(105, 105, 105, 0.5) !important;

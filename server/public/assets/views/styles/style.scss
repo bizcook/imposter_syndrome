@@ -27,11 +27,17 @@ h1, h3, body, h4, h2, a {
 
 }
 h1{
+  @include span-columns(10);
+  @include shift(1);
+  @include media($mobile) {
+  @include span-columns(4);
+  font-size: 60px;
+  @include shift(0);
+  letter-spacing: 5px;
+  }
   font-size: 90px;
   letter-spacing: 10px;
-  width:80%;
   display: block;
-  margin: 0 auto;
   padding-top: 5%;
   text-align: center;
 }
@@ -126,7 +132,10 @@ placeholder {
   @include span-columns(6);
   @include shift(3);
   display: inline;
-
+  @include media($mobile) {
+  @include span-columns(4);
+  @include shift(0);
+}
 }
 
 input::-webkit-input-placeholder {
