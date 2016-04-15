@@ -6,6 +6,7 @@ $primaryColor: rgb(102,255,178);
 $secondaryColor: rgb(255,102,103);
 $thirdColor: #66FFFE;
 $font: 'Oswald', sans-serif;
+$mobile: new-breakpoint(max-width 500px 4);
 
 
 //rest of styling
@@ -36,14 +37,19 @@ h1{
 }
 
   h3 {
+    @include span-columns(8);
+    @include shift(2);
     letter-spacing: 2px;
-    margin: 0 auto;
-
+    // margin: 0 auto;
+    display: block;
     color: $secondaryColor;
     font-size: 4em;
     text-align: center;
-
     float: none;
+   }
+
+    .smarts {
+     font-size: 3em;
    }
 h2{
   @include span-columns(8);
@@ -61,10 +67,11 @@ h4{
 }
 
 
-.imageAlign{
+.frontImg {
   display: block;
   text-align: center;
-
+  @include span-columns(8);
+  @include shift(2);
 
 
 }
@@ -77,13 +84,29 @@ h4{
 input{
   @include span-columns(4);
   @include shift(4);
+  @include media($mobile) {
+  @include span-columns(4);
+  @include shift(0);
+  }
   border: none;
   height: 30px;
+  margin-top: 2em;
+}
+
+placeholder {
+  text-align: center;
 }
 
 .submit{
     @include span-columns(2);
     @include shift(5);
+    @include media($mobile) {
+    @include span-columns(4);
+    @include shift(0);
+    }
+
+    margin-bottom: 2em;
+    margin-top: 2em;
     border: none;
     height: 30px;
     background-color: $secondaryColor;
@@ -92,6 +115,50 @@ input{
     text-transform: uppercase;
     letter-spacing: 1px;
     display: block;
+}
+
+.submit:hover{
+  background-color: $primaryColor;
+  color: black;
+}
+
+.brainGif{
+  @include span-columns(6);
+  @include shift(3);
+  display: inline;
+
+}
+
+input::-webkit-input-placeholder {
+color: transparentize(dimgray, .5)!important;
+letter-spacing: 1px;
+text-align: center;
+text-transform: uppercase;
+font-family: $font;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+color: transparentize(dimgray, .5)!important;
+letter-spacing: 1px;
+text-align: center;
+text-transform: uppercase;
+font-family: $font;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+color: transparentize(dimgray, .5)!important;
+letter-spacing: 1px;
+text-align: center;
+text-transform: uppercase;
+font-family: $font;
+}
+
+input:-ms-input-placeholder {
+color: transparentize(dimgray, .5)!important;
+text-align: center;
+text-transform: uppercase;
+font-family: $font;
+letter-spacing: 1px;
 }
 
 //NAV HEADER BOURBON CODE

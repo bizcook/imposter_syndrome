@@ -1,7 +1,7 @@
 <div class = "maincontainer">
   <h1>tell me why you're a freakin genius.</h1>
   <div class="imageAlign">
-      <img src="./styles/brain.gif" alt="gif of brain" width=50% >
+      <img class= "brainGif" src="./styles/brain.gif" alt="gif of brain" width=50% >
   </div>
 <h2>THINGS I'VE LEARNED</h2>
   <!-- <div ng-repeat="Smart in data.response"> <h3> {{ smarts.positive }} </h3></div> -->
@@ -10,13 +10,13 @@
       <br />
     <input type = "submit" class = "submit" ng-click="showme=true" value = "i'm smart!" />
   </form>
-
+<br />  
   <div ng-controller="ShowController">
 
   <div ng-repeat="smarts in positive.response" class = "animation" >
     <p ng-hide="showme"></p>
 
-    <h3 ng-show="showme">{{ smarts.positive }}</h3>
+    <h3 class = "smarts" ng-show="showme">{{ smarts.positive }}</h3>
 
   </div>
   </div>
