@@ -13,9 +13,10 @@ body {
   background-size: cover; }
 
 h1, h3, body, h4, h2, a {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #66ffb2;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 h1 {
   font-size: 90px;
@@ -23,38 +24,95 @@ h1 {
   width: 80%;
   display: block;
   margin: 0 auto;
-  padding-top: 5%; }
+  padding-top: 5%;
+  text-align: center; }
 
 h3 {
-  color: #ff6667; }
+  letter-spacing: 2px;
+  margin: 0 auto;
+  color: #ff6667;
+  font-size: 4em;
+  text-align: center;
+  float: none; }
+
+h2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  letter-spacing: 2px; }
+  h2:last-child {
+    margin-right: 0; }
+
+h4 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  letter-spacing: 3px;
+  color: white;
+  font-size: 2em; }
+  h4:last-child {
+    margin-right: 0; }
 
 .imageAlign {
   display: block;
   text-align: center; }
 
+.graph {
+  padding-top: 30px; }
+
+input {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  border: none;
+  height: 30px; }
+  input:last-child {
+    margin-right: 0; }
+
+.submit {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  border: none;
+  height: 30px;
+  background-color: #ff6667;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block; }
+  .submit:last-child {
+    margin-right: 0; }
+
 .centered-navigation {
   background-color: #E7F1EC;
   border-bottom: 1px solid #d4e6dd;
-  min-height: 60px;
+  min-height: 80px;
   width: 100%;
   z-index: 9999; }
   .centered-navigation .mobile-logo {
     display: inline;
     float: left;
-    max-height: 60px;
+    max-height: 80px;
     padding-left: 1em; }
     .centered-navigation .mobile-logo img {
-      max-height: 60px;
+      max-height: 80px;
       opacity: 0.6;
       padding: 0.8em 0; }
     @media screen and (min-width: 53.75em) {
       .centered-navigation .mobile-logo {
         display: none; } }
   .centered-navigation .centered-navigation-mobile-menu {
-    color: rgba(51, 51, 51, 0.7);
+    color: rgba(0, 0, 0, 0.9);
     display: block;
     float: right;
-    line-height: 60px;
+    line-height: 80px;
     margin: 0;
     padding-right: 1em;
     text-decoration: none;
@@ -63,7 +121,7 @@ h3 {
       .centered-navigation .centered-navigation-mobile-menu {
         display: none; } }
     .centered-navigation .centered-navigation-mobile-menu:focus, .centered-navigation .centered-navigation-mobile-menu:hover {
-      color: #333; }
+      color: #ff6667; }
   .centered-navigation .centered-navigation-wrapper {
     max-width: 1200px;
     margin-left: auto;
@@ -99,24 +157,24 @@ h3 {
   .centered-navigation ul li.nav-link {
     background: #E7F1EC;
     display: block;
-    line-height: 60px;
+    line-height: 80px;
     overflow: hidden;
     padding-right: 1em;
     text-align: right;
     width: 100%;
     z-index: 9999; }
     .centered-navigation ul li.nav-link a {
-      color: rgba(51, 51, 51, 0.7);
+      color: rgba(0, 0, 0, 0.9);
       display: inline-block;
       outline: none;
       text-decoration: none; }
       .centered-navigation ul li.nav-link a:focus, .centered-navigation ul li.nav-link a:hover {
-        color: #333; }
+        color: #ff6667; }
     @media screen and (min-width: 53.75em) {
       .centered-navigation ul li.nav-link {
         background: transparent;
         display: inline;
-        line-height: 60px; }
+        line-height: 80px; }
         .centered-navigation ul li.nav-link a {
           padding-right: 1em; } }
   .centered-navigation li.logo.nav-link {
@@ -146,7 +204,7 @@ h3 {
       right: -0.4em;
       bottom: auto;
       left: auto;
-      color: rgba(51, 51, 51, 0.7);
+      color: rgba(0, 0, 0, 0.9);
       content: "\25BE"; }
   .centered-navigation li.more {
     overflow: visible;
@@ -191,7 +249,7 @@ h3 {
       padding-right: 0; }
       @media screen and (min-width: 53.75em) {
         .centered-navigation ul.submenu li {
-          line-height: 46.15385px; }
+          line-height: 61.53846px; }
           .centered-navigation ul.submenu li:first-child > a {
             border-top-left-radius: 3px;
             border-top-right-radius: 3px; }

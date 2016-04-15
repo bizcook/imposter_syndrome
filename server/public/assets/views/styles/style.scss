@@ -4,11 +4,13 @@
 //set variables
 $primaryColor: rgb(102,255,178);
 $secondaryColor: rgb(255,102,103);
+$thirdColor: #66FFFE;
+$font: 'Oswald', sans-serif;
 
 
 //rest of styling
 body{
-  // background-color: rgb(0, 0, 51);
+
   background: url(code_background.png) repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -17,9 +19,11 @@ body{
 
 }
 h1, h3, body, h4, h2, a {
-  font-family: 'Oswald', sans-serif;
+  font-family: $font;
   color: $primaryColor ;
   text-transform: uppercase;
+  text-align: center;
+
 }
 h1{
   font-size: 90px;
@@ -28,17 +32,65 @@ h1{
   display: block;
   margin: 0 auto;
   padding-top: 5%;
+  text-align: center;
 }
 
-h3{
-  color: $secondaryColor;
+  h3 {
+    letter-spacing: 2px;
+    margin: 0 auto;
+
+    color: $secondaryColor;
+    font-size: 4em;
+    text-align: center;
+
+    float: none;
+   }
+h2{
+  @include span-columns(8);
+  @include shift(2);
+  letter-spacing: 2px;
 }
+
+h4{
+  @include span-columns(8);
+  @include shift(2);
+  letter-spacing: 3px;
+  color:white;
+  font-size: 2em;
+  
+}
+
 
 .imageAlign{
   display: block;
   text-align: center;
+
+
+
 }
 
+.graph{
+  padding-top: 30px;
+
+}
+
+input{
+  @include span-columns(4);
+  border: none;
+  height: 30px;
+}
+
+.submit{
+    @include span-columns(2);
+    border: none;
+    height: 30px;
+    background-color: $secondaryColor;
+    color: white;
+    font-family: $font;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+}
 
 //NAV HEADER BOURBON CODE
 
@@ -46,13 +98,13 @@ h3{
   $base-border-radius: 3px !default;
   $dark-gray: #333 !default;
   $large-screen: em(860) !default;
-  $base-font-color: $dark-gray !default;
+  $base-font-color: black !default;
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
   $centered-navigation-background: #E7F1EC;
-  $centered-navigation-color: transparentize($base-font-color, 0.3);
-  $centered-navigation-color-hover: $base-font-color;
-  $centered-navigation-height: 60px;
+  $centered-navigation-color: transparentize(black, 0.1);
+  $centered-navigation-color-hover: $secondaryColor;
+  $centered-navigation-height: 80px;
   $centered-navigation-item-padding: 1em;
   $centered-navigation-submenu-padding: 1em;
   $centered-navigation-submenu-width: 12em;
